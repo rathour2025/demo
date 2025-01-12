@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+<h1>HTML Form</h1>
+<form action="/submit" method="post">
+    <!-- Text Input -->
+    <div>
+        <label>Text Input:</label>
+        <input type="text" id="text" name="text" placeholder="Enter text here">
+        <div class="code-block">&lt;input type="text" id="text" name="text" placeholder="Enter text here"&gt;</div>
+    </div>
+
+    <!-- Password Input -->
+    <div>
+        <label>Password:</label>
+        <input type="password" id="password" name="password">
+        <div class="code-block">&lt;input type="password" id="password" name="password"&gt;</div>
+    </div>
+
+    <!-- Email Input -->
+    <div>
+        <label>Email:</label>
+        <input type="email" id="email" name="email">
+        <div class="code-block">&lt;input type="email" id="email" name="email"&gt;</div>
+    </div>
+
+    <!-- Number Input -->
+    <div>
+        <label>Number:</label>
+        <input type="number" id="number" name="number" min="0" max="100">
+        <div class="code-block">&lt;input type="number" id="number" name="number" min="0" max="100"&gt;</div>
+    </div>
+
+    <!-- Date Input -->
+    <div>
+        <label>Date:</label>
+        <input type="date" id="date" name="date">
+        <div class="code-block">&lt;input type="date" id="date" name="date"&gt;</div>
+    </div>
+
+    <!-- File Input -->
+    <div>
+        <label>File Upload:</label>
+        <input type="file" id="file" name="file">
+        <div class="code-block">&lt;input type="file" id="file" name="file"&gt;</div>
+    </div>
+
+    <!-- Radio Buttons -->
+    <div>
+        <label>Gender:</label>
+        <div style="display: flex; gap: 10px;">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div class="code-block">
+            &lt;input type="radio" id="male" name="gender" value="male"&gt;<br>
+            &lt;label for="male"&gt;Male&lt;/label&gt;<br>
+            &lt;input type="radio" id="female" name="gender" value="female"&gt;<br>
+            &lt;label for="female"&gt;Female&lt;/label&gt;
+        </div>
+    </div>
+
+    <!-- Checkboxes -->
+    <div>
+        <label>Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+        <label for="traveling">Traveling</label>
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        <label for="sports">Sports</label>
+        <div class="code-block">
+            &lt;input type="checkbox" id="reading" name="hobbies" value="reading"&gt;<br>
+            &lt;label for="reading"&gt;Reading&lt;/label&gt;<br>
+            &lt;input type="checkbox" id="traveling" name="hobbies" value="traveling"&gt;<br>
+            &lt;label for="traveling"&gt;Traveling&lt;/label&gt;<br>
+            &lt;input type="checkbox" id="sports" name="hobbies" value="sports"&gt;<br>
+            &lt;label for="sports"&gt;Sports&lt;/label&gt;
+        </div>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">Select your country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select>
+        <div class="code-block">
+            &lt;select id="country" name="country"&gt;<br>
+            &nbsp;&nbsp;&lt;option value=""&gt;Select your country&lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="usa"&gt;USA&lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="canada"&gt;Canada&lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="uk"&gt;UK&lt;/option&gt;<br>
+            &lt;/select&gt;
+        </div>
+    </div>
+
+    <!-- Textarea -->
+    <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+        <div class="code-block">
+            &lt;textarea id="message" name="message" rows="4" placeholder="Write your message here..."&gt;&lt;/textarea&gt;
+        </div>
+    </div>
+
+   
+
+    <!-- Submit Button -->
+    <div>
+        <button type="submit">Submit</button>
+        <div class="code-block">&lt;button type="submit"&gt;Submit&lt;/button&gt;</div>
+    </div>
+</form>
+</body>
+</html>

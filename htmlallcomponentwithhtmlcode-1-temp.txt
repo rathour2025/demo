@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+        label {
+            flex: 1;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .input-wrapper {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+        }
+        .input-wrapper input,
+        .input-wrapper select,
+        .input-wrapper textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .code-block {
+            flex: 2;
+            font-family: monospace;
+            background: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-left: 20px;
+            word-break: break-word;
+        }
+        button {
+            width: auto;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>HTML Form</h1>
+<form action="/submit" method="post">
+    <!-- Text Input -->
+    <div class="form-group">
+        <label for="text">Text Input:</label>
+        <div class="input-wrapper">
+            <input type="text" id="text" name="text" placeholder="Enter text here">
+        </div>
+        <div class="code-block">&lt;input type="text" id="text" name="text" placeholder="Enter text here"&gt;</div>
+    </div>
+
+    <!-- Password Input -->
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <div class="input-wrapper">
+            <input type="password" id="password" name="password">
+        </div>
+        <div class="code-block">&lt;input type="password" id="password" name="password"&gt;</div>
+    </div>
+
+    <!-- Email Input -->
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <div class="input-wrapper">
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="code-block">&lt;input type="email" id="email" name="email"&gt;</div>
+    </div>
+
+    <!-- Number Input -->
+    <div class="form-group">
+        <label for="number">Number:</label>
+        <div class="input-wrapper">
+            <input type="number" id="number" name="number" min="0" max="100">
+        </div>
+        <div class="code-block">&lt;input type="number" id="number" name="number" min="0" max="100"&gt;</div>
+    </div>
+
+    <!-- Date Input -->
+    <div class="form-group">
+        <label for="date">Date:</label>
+        <div class="input-wrapper">
+            <input type="date" id="date" name="date">
+        </div>
+        <div class="code-block">&lt;input type="date" id="date" name="date"&gt;</div>
+    </div>
+
+    <!-- File Input -->
+    <div class="form-group">
+        <label for="file">File Upload:</label>
+        <div class="input-wrapper">
+            <input type="file" id="file" name="file">
+        </div>
+        <div class="code-block">&lt;input type="file" id="file" name="file"&gt;</div>
+    </div>
+
+    <!-- Radio Buttons -->
+    <div class="form-group">
+        <label>Gender:</label>
+        <div class="input-wrapper">
+            <div style="display: flex; gap: 10px;">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+        <div class="code-block">
+            &lt;input type="radio" id="male" name="gender" value="male"&gt;<br>
+            &lt;label for="male"&gt;Male&lt;/label&gt;<br>
+            &lt;input type="radio" id="female" name="gender" value="female"&gt;<br>
+            &lt;label for="female"&gt;Female&lt;/label&gt;
+        </div>
+    </div>
+
+    <!-- Checkboxes -->
+    <div class="form-group">
+        <label>Hobbies:</label>
+        <div class="input-wrapper">
+            <div style="display: flex; flex-direction: column;">
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                <label for="traveling">Traveling</label>
+                <input type="checkbox" id="sports" name="hobbies" value="sports">
+                <label for="sports">Sports</label>
+            </div>
+        </div>
+        <div class="code-block">
+            &lt;input type="checkbox" id="reading" name="hobbies" value="reading"&gt;<br>
+            &lt;label for="reading"&gt;Reading&lt;/label&gt;<br>
+            &lt;input type="checkbox" id="traveling" name="hobbies" value="traveling"&gt;<br>
+            &lt;label for="traveling"&gt;Traveling&lt;/label&gt;<br>
+            &lt;input type="checkbox" id="sports" name="hobbies" value="sports"&gt;<br>
+            &lt;label for="sports"&gt;Sports&lt;/label&gt;
+        </div>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div class="form-group">
+        <label for="country">Country:</label>
+        <div class="input-wrapper">
+            <select id="country" name="country">
+                <option value="">Select your country</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select>
+        </div>
+        <div class="code-block">
+            &lt;select id="country" name="country"&gt;<br>
+            &nbsp;&nbsp;&lt;option value=""&gt;Select your country&lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="usa"&gt;USA&lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="canada"&gt;Canada&lt;/option&gt;<br>
+            &nbsp;&nbsp;&lt;option value="uk"&gt;UK&lt;/option&gt;<br>
+            &lt;/select&gt;
+        </div>
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+        <label for="message">Message:</label>
+        <div class="input-wrapper">
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+        </div>
+        <div class="code-block">
+            &lt;textarea id="message" name="message" rows="4" placeholder="Write your message here..."&gt;&lt;/textarea&gt;
+        </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-group">
+        <div></div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+</body>
+</html>

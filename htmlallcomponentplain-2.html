@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+
+<h1>HTML Form</h1>
+<form action="/submit" method="post">
+    <!-- Text Input -->
+    <div>
+        <label>Text Input:</label>
+        <input type="text" id="text" name="text" placeholder="Enter text here">
+    </div>
+
+    <!-- Password Input -->
+    <div>
+        <label>Password:</label>
+        <input type="password" id="password" name="password">
+    </div>
+
+    <!-- Email Input -->
+    <div>
+        <label>Email:</label>
+        <input type="email" id="email" name="email">
+    </div>
+
+    <!-- Number Input -->
+    <div>
+        <label>Number:</label>
+        <input type="number" id="number" name="number" min="0" max="100">
+    </div>
+
+    <!-- Date Input -->
+    <div>
+        <label>Date:</label>
+        <input type="date" id="date" name="date">
+    </div>
+
+    <!-- File Input -->
+    <div>
+        <label>File Upload:</label>
+        <input type="file" id="file" name="file">
+    </div>
+
+    <!-- Radio Buttons -->
+    <div>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label>Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label>Female</label>
+    </div>
+
+    <!-- Checkboxes -->
+    <div>
+        <label>Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label>Reading</label>
+        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+        <label>Traveling</label>
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        <label>Sports</label>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div>
+        <label>Country:</label>
+        <select id="country" name="country">
+            <option value="">Select your country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+        </select>
+    </div>
+
+    <!-- Textarea -->
+    <div>
+        <label>Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+</body>
+</html>
